@@ -7,6 +7,6 @@
  */
 
 return [
-    'default_controller' => 'indexsss',
+    'default_controller' => 'index',
     'default_method' => 'index',
 ];

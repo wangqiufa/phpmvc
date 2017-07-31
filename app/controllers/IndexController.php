@@ -16,13 +16,12 @@ class IndexController extends Phpmvc
 {
     public function index()
     {
-        echo Config::get('default_controller', 'route');exit;
-
-        //echo 'it is ok';
-//        $model = new Model();
-//        $sql = 'select * from user';
-//        $query = $model->query($sql);
-//        $rs = $query->fetchAll();
+        echo 'it is ok';
+        $model = new Model();
+        $sql = 'select * from user';
+        $query = $model->query($sql);
+        $rs = $query->fetchAll();
+        var_dump($rs);exit;
         $data = 'ee';
         $title = 'tttt';
 

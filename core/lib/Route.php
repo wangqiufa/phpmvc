@@ -26,7 +26,7 @@ class Route
                 $this->method = $requestUrlArr[1];
                 unset($requestUrlArr[1]);
             } else {
-                $this->method = 'index';
+                $this->method = Config::get('default_method', 'route');
             }
 
             $count = count($requestUrlArr) + 2;
@@ -39,8 +39,8 @@ class Route
             }
 
         } else {
-            $this->controller = 'index';
-            $this->method = 'index';
+            $this->controller = Config::get('default_controller', 'route');
+            $this->method = Config::get('default_method', 'route');
         }
     }
 }

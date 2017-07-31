@@ -35,7 +35,7 @@ class Route
                 if (isset($requestUrlArr[$i + 1])) {
                     $_GET[$requestUrlArr[$i]] = $requestUrlArr[$i + 1];
                 }
-                $i = $i +2;
+                $i = $i + 2;
             }
 
         } else {

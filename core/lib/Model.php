@@ -2,6 +2,8 @@
 
 namespace core\lib;
 
+use Medoo\Medoo;
+
 /**
  * Created by PhpStorm.
  * User: wangqiufa
@@ -9,18 +11,11 @@ namespace core\lib;
  * Description: 模型
  */
 
-class Model extends \PDO
+class Model extends Medoo
 {
     public function __construct()
     {
-        $databaseConfig = Config::getAll('database');
-
-        try{
-            parent::__construct($databaseConfig['dsn'], $databaseConfig['username'], $databaseConfig['password']);
-        } catch (\PDOException $e) {
-            echo $e->getMessage();
-        }
+        $option = Config::getAll('database');
+        parent::__construct($option);
     }
-
-
 }

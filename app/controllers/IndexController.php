@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\model\UserModel;
 use core\lib\Config;
 use core\lib\Log;
 use core\lib\Model;
@@ -17,6 +18,10 @@ class IndexController extends Phpmvc
 {
     public function index()
     {
+        $model = new UserModel();
+        $list = $model->select('user', "*");
+        dump($list);exit;
+
 //        Log::init();
 //        Log::log('3');
 //        echo 'it is ok';
@@ -32,6 +37,6 @@ class IndexController extends Phpmvc
 //        $this->assign('title', $title);
 //        $this->display('/index/index.html');
 
-        dump($_SERVER);
+        //dump($_SERVER);
     }
 }

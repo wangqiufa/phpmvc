@@ -174,17 +174,17 @@
     },
     {
         "name": "symfony/var-dumper",
-        "version": "v3.3.5",
-        "version_normalized": "3.3.5.0",
+        "version": "v3.3.6",
+        "version_normalized": "3.3.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "0f32b62d21991700250fed5109b092949007c5b3"
+            "reference": "b2623bccb969ad595c2090f9be498b74670d0663"
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/symfony/var-dumper/0f32b62d21991700250fed5109b092949007c5b3.zip",
-            "reference": "0f32b62d21991700250fed5109b092949007c5b3",
+            "url": "https://files.phpcomposer.com/files/symfony/var-dumper/b2623bccb969ad595c2090f9be498b74670d0663.zip",
+            "reference": "b2623bccb969ad595c2090f9be498b74670d0663",
             "shasum": ""
         },
         "require": {
@@ -202,7 +202,7 @@
             "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
             "ext-symfony_debug": ""
         },
-        "time": "2017-07-10T14:18:27+00:00",
+        "time": "2017-07-28T06:06:09+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -240,6 +240,67 @@
         "keywords": [
             "debug",
             "dump"
+        ]
+    },
+    {
+        "name": "catfan/medoo",
+        "version": "v1.4.5",
+        "version_normalized": "1.4.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/catfan/Medoo.git",
+            "reference": "8ee8ae1c4df0fee3822a01333eab88893e548fcc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/catfan/Medoo/8ee8ae1c4df0fee3822a01333eab88893e548fcc.zip",
+            "reference": "8ee8ae1c4df0fee3822a01333eab88893e548fcc",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "php": ">=5.4"
+        },
+        "suggest": {
+            "ext-pdo_dblib": "For MSSQL or Sybase database on Linux/UNIX platform",
+            "ext-pdo_mysql": "For MySQL or MariaDB database",
+            "ext-pdo_oci": "For Oracle database",
+            "ext-pdo_oci8": "For Oracle version 8 database",
+            "ext-pdo_pqsql": "For PostgreSQL database",
+            "ext-pdo_sqlite": "For SQLite database",
+            "ext-pdo_sqlsrv": "For MSSQL database on Windows platform"
+        },
+        "time": "2017-06-24T14:43:07+00:00",
+        "type": "framework",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Medoo\\": "/src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Angel Lai",
+                "email": "angel@catfan.me"
+            }
+        ],
+        "description": "The lightest PHP database framework to accelerate development",
+        "homepage": "https://medoo.in",
+        "keywords": [
+            "database",
+            "lightweight",
+            "mariadb",
+            "mssql",
+            "mysql",
+            "oracle",
+            "php framework",
+            "postgresql",
+            "sql",
+            "sqlite"
         ]
     }
 ]

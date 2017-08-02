@@ -17,8 +17,8 @@ class IndexController extends Phpmvc
 {
     public function index()
     {
-        Log::init();
-        Log::log('3');
+//        Log::init();
+//        Log::log('3');
 //        echo 'it is ok';
 //        $model = new Model();
 //        $sql = 'select * from user';
@@ -31,5 +31,7 @@ class IndexController extends Phpmvc
 //        $this->assign('data', $data);
 //        $this->assign('title', $title);
 //        $this->display('/index/index.html');
+
+        dump($_SERVER);
     }
 }

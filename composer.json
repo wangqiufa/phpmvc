@@ -1,0 +1,12 @@
+{
+  "require" : {
+    "filp/whoops" : "*",
+    "symfony/var-dumper" : "*"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}

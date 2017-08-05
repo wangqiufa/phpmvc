@@ -18,9 +18,16 @@ class IndexController extends Phpmvc
 {
     public function index()
     {
-        $model = new UserModel();
-        $list = $model->select('user', "*");
-        dump($list);exit;
+        $data = 'halou';
+        $title = '44443333';
+        $this->assign('data', $data);
+        $this->assign('title', $title);
+        $this->display('index/index.html');
+
+
+//        $model = new UserModel();
+//        $list = $model->select('user', "*");
+//        dump($list);exit;
 
 //        Log::init();
 //        Log::log('3');

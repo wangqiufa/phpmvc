@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use app\behavior\observer\UserObserver;
+
 /**
  * Created by PhpStorm.
  * User: wangqiufa
@@ -11,6 +13,13 @@ namespace app\controllers;
 
 class ObserverTestController
 {
+    protected $observer;
+
+    public function __construct()
+    {
+        $this->observer = new UserObserver();
+    }
+
     public function index()
     {
         echo 333;

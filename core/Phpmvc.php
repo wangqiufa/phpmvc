@@ -9,7 +9,6 @@ namespace core;
 class Phpmvc
 {
     public static $classMap = [];
-    public $assign;
 
     static public function run()
     {
@@ -41,25 +40,6 @@ class Phpmvc
             } else {
                 return false;
             }
-        }
-    }
-
-    public function assign($name, $value)
-    {
-        $this->assign[$name] = $value;
-    }
-
-    public function display($file)
-    {
-        $filePath = APP . '/views/' . $file;
-        if (is_file($filePath)) {
-            $loader = new \Twig_Loader_Filesystem(APP . '/views');
-            $twig = new \Twig_Environment($loader, array(
-                'cache' => PHPMVC . '/log/twig',
-                'debug' => DEBUG
-            ));
-            $template = $twig->load($file);
-            $template->display($this->assign ? $this->assign : []);
         }
     }
 }

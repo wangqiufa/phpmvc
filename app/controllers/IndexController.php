@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\model\UserModel;
 use core\lib\Config;
+use core\lib\Controller;
 use core\lib\Log;
 use core\lib\Model;
 use core\Phpmvc;
@@ -14,7 +15,7 @@ use core\Phpmvc;
  * Date: 2017/7/28
  * Description: 控制器
  */
-class IndexController extends Phpmvc
+class IndexController extends Controller
 {
     public function index()
     {

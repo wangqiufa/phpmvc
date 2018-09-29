@@ -42,4 +42,9 @@ class TestController extends Controller
 
         //dump($_SERVER);
     }
+
+    public function test1()
+    {
+        echo 'test';
+    }
 }
